@@ -1,0 +1,21 @@
+.fixed_height_full {
+	height: 100%;
+    min-height: 850px;
+
+}
+
+i.color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+    color: transparent;
+}
+
+img.texture {
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: text-top;
+    color: transparent;
+}
