@@ -63,7 +63,7 @@
                 <div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea class="form-control" rows="3" placeholder="Comments"></textarea>
                     </div>
                   </div>
                 </div>
