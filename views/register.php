@@ -24,7 +24,7 @@
 		<?php 
       require_once('views/menu.html');
     ?>
-	<div class="col-md-12">	
+	<div class="login">	
 	<form class="form" method="post" role="form">
 		<fieldset>
 			<legend>Create Account </legend>
