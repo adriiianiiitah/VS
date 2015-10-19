@@ -7,7 +7,7 @@
           <div class="col-xs-12">
             <section class="panel">
               <header class="panel-heading">
-                <h3>Users Table</h3>
+                <h3>Special Prices Table</h3>
                 <div class="pull-right">
                   <ul class="files">
                     <li><button class="fa fa-file-text-o" title="CVS"></button></li>
@@ -22,27 +22,27 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <th>Code</th>
+                      <th>Item</th>
+                      <th>Discount (%)</th>
+                      <th>Price</th>
+                      <th>Up to (number articles)</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th class=" no-link last"><span class="nobr">Action</span></th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>#</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <th>Code</th>
+                      <th>Item</th>
+                      <th>Discount (%)</th>
+                      <th>Price</th>
+                      <th>Up to (number articles)</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th class=" no-link last"><span class="nobr">Action</span></th>
                     </tr>
                   </tfoot>
                   <tbody>

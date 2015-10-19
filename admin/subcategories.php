@@ -7,7 +7,7 @@
           <div class="col-xs-12">
             <section class="panel">
               <header class="panel-heading">
-                <h3>Users Table</h3>
+                <h3>Sub - categories Table</h3>
                 <div class="pull-right">
                   <ul class="files">
                     <li><button class="fa fa-file-text-o" title="CVS"></button></li>
@@ -22,35 +22,26 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <th>No. </th>
+                      <th>Sub - Category </th>
+                      <th>Categories </th>
+                      <th>Description </th>
+                      <th class=" no-link last"><span class="nobr">Action</span></th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>#</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <th>No. </th>
+                      <th>Sub - Category </th>
+                      <th>Categories </th>
+                      <th>Description </th>
+                      <th class=" no-link last"><span class="nobr">Action</span></th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>

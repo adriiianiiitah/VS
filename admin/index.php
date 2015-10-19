@@ -1,18 +1,22 @@
       <?php 
         require_once('views/navigation.html');
       ?>
-
-      <!-- page content -->         
-      <div class="right_col" role="main">  
+      <div id="page-index" class="right-side">
+      <div class="content">
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="x_panel fixed_height_full">
-              <div class="x_title">
-                
+          <div class="col-xs-12">
+            <section class="panel">
+              <div class="jumbotron">
+                <div class="container">
+                  <h1>Welcome!</h1>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
+      </div>
+            <!--<div class="container-fluid" ></div>-->
+      </div>
 
         <?php 
           require_once('views/footer.html');
