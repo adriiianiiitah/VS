@@ -40,12 +40,15 @@ body {
 }
 
 .navbar {
+	position: absolute;
+    z-index: 50;
+    width: 100%;
 	margin-bottom:0;
-	background: #fff;
+	background: transparent;
 }
 
 .navbar {
-	background-color:#fff;
+	background-color: rgba(255,255,255,0.6);
 	border:none;
 }
 /*
@@ -65,7 +68,7 @@ body {
 
 .navbar-default .navbar-nav>li{
 	padding: 0;
-    background: #fff;
+    background: transparent;
 }
 
 .navbar-default .navbar-nav>li:hover{
@@ -74,10 +77,13 @@ body {
 
 .navbar-default .navbar-nav>li>a{
     padding: 30px 60px;
+    color: black;
 }
 
-.navbar-default .navbar-nav>li>a:hover{
-    background: #FD9505;
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active{
+    background: rgba(253, 149, 5, 0.8);
     color:#fff;
 }
 
@@ -232,4 +238,15 @@ button[type=submit]:hover {
 
 .body-orange {
 	background: url(../admin/images/backgrounds/intro.png);
+}
+
+.login{
+	margin: 5% 25%;	
+}
+
+.body-home {
+
+}
+
+#slider {
 }

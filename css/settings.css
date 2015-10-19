@@ -1,21 +1,324 @@
-.fixed_height_full {
-	height: 100%;
-    min-height: 850px;
+
+* {
+    /*border: 1px solid black;*/
+}
+
+html {
+    border: 1px solid transparent;
+}
+
+body {
 
 }
 
-i.color {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: text-top;
-    color: transparent;
+footer {
+
+    background: gray;
 }
 
-img.texture {
-	display: inline-block;
-    width: 30px;
-    height: 30px;
-    vertical-align: text-top;
-    color: transparent;
+img {
+    max-width: 100% !important;
 }
+
+.wrapper:before, .wrapper:after {
+    display: table;
+    content: " ";
+}
+
+.wrapper:after {
+    clear: both;
+}
+
+.user-panel {
+    padding: 10px;
+}
+
+.user-panel:before, .user-panel:after {
+    display: table;
+    content: " ";
+}
+
+.user-panel:after {
+    clear: both;
+}
+.user-profile > .image > img,
+.user-panel > .image > img {
+    width: 45px;
+    height: 45px;
+}
+
+.user-panel > .info {
+    font-weight: 600;
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.user-profile > .info p {
+    margin-left: 9px;
+    line-height: 32px;
+}
+
+.user-panel > .info > p {
+    margin-bottom: 9px;
+}
+
+.user-panel > .info > a {
+    text-decoration: none;
+    padding-right: 5px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.user-panel > .info > a > .fa,
+.user-panel > .info > a > .ion,
+.user-panel > .info > a > .glyphicon {
+    margin-right: 5px;
+}
+
+.sidebar {
+    margin-bottom: 5px;
+}
+
+.sidebar .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .sidebar-menu > li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px dotted #FFBE64;
+}
+
+.sidebar .sidebar-menu > li > a {
+    padding: 15px 25px;
+    display: block;
+}
+
+.right-side, .left-side {
+    min-height: 100%;
+    display: block;
+}
+
+.left-side {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    min-height: 3961px;
+}
+
+.right-side {
+    background-color: #f0f3f4;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.content {
+    padding: 20px 15px;
+    background: #f0f3f4;
+    overflow: auto;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.jumbotron {
+    background-color: #fff;
+}
+
+.navbar-right {
+    width: 220px;
+    float: right;
+}
+
+.navbar-right > li a {
+    width: 220px;
+}
+
+.navbar-right > li a .fa {
+    margin-right: 20px;
+}
+
+ul li button {
+    margin: 4px;
+}
+
+
+
+
+
+
+.skin-orange .left-side {
+    background: #ff9300;
+}
+
+.skin-orange .sidebar {
+    border-bottom: 1px solid #FFBE64;
+}
+
+.skin-orange .user-panel > .image > img {
+    border: 1px solid #FFBE64;
+}
+
+.skin-orange .user-panel > .info, .skin-orange .user-panel > .info > a {
+    color: #fff;
+}
+
+.skin-orange .sidebar > .sidebar-menu > li:first-of-type {
+    border-top: 1px solid #FFBE64;
+}
+
+.skin-orange .sidebar > .sidebar-menu > li > a {
+    margin-right: 1px;
+    text-decoration: none;
+}
+
+.skin-orange .sidebar > .sidebar-menu > li > a:hover, 
+.skin-orange .sidebar > .sidebar-menu > li.active > a {
+    color: #00bfff;
+    background: #fff;
+}
+
+.right-side .panel .panel-heading .files {
+    list-style-type: none;
+}
+
+.right-side .panel .panel-heading .files li{
+    float: left;
+}
+
+.right-side .panel .panel-heading .files > li > button {
+    background: #00bfff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skin-orange .sidebar > .sidebar-menu > li > a .fa {
+    margin-right: 20px;
+}
+
+.skin-orange .user-settings > li > a {
+    color: #00bfff;
+    background: #fff;
+}
+
+.skin-orange .user-settings > li > a:hover {
+    color: #fff;
+    background: #00bfff;
+}
+
+.skin-orange .sidebar > .sidebar-menu > li:first-of-type > a {
+    border-top: 0px solid #FFBE64;
+}
+
+.skin-orange .sidebar a {
+    color: #fff;
+}
+
+.skin-orange .user-settings:after {
+    bottom: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: #fff;
+    border-bottom-color: rgba(0, 0, 0, .075);
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+@media screen and (min-width: 992px)
+.left-side {
+    top: 50px;
+}
+
+.dropdown-menu {
+    border-radius: none;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, .075);
+}
+
+.text-success {
+    color: #65CBCB;
+}
+
+#page-index {
+
+}
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .navbar-right {
+            position: relative;
+            width: 100%;
+            clear: both;
+            float: none;
+            margin: 0;
+        }
+
+        .navbar-right > li a {
+            width: 100%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
