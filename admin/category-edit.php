@@ -10,7 +10,7 @@
                 <h3>Category</h3>
               </header>
               <div class="panel-body">
-                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                  <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
                     <div class="profile_img">
                       <div id="crop-avatar">
                         <!-- Current avatar -->
@@ -22,26 +22,26 @@
                   </div>
 
                   <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12"> 
-                    <form id="" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="" class="form-horizontal form-label-left">
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12" for="name">Name <span class="required">*</span>
                         </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                           <input type="text" id="name" name="name" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12" for="description">Description <span class="required">*</span>
                         </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <textarea id="description" name="description" required="required" class="form-control col-md-7 col-xs-12" class="form-control" rows="3"></textarea>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                          <textarea id="description" name="description" required="required" class="form-control col-md-7 col-sm-12 col-xs-12" class="form-control" rows="3"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="image">Image
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12" for="image">Image
                         </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="file" id="image" name="image" class="form-control col-md-7 col-xs-12 btn">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                          <input type="file" id="image" name="image" class="form-control col-md-7 col-sm-12 col-xs-12 btn">
                         </div>
                       </div>
                       <div class="ln_solid"></div>
@@ -65,3 +65,4 @@
     ?>
 </body>
 </html>
+

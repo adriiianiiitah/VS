@@ -7,7 +7,7 @@
           <div class="col-xs-12">
             <section class="panel">
               <header class="panel-heading">
-                <h3>Category</h3>
+                <h3>Subcategory</h3>
               </header>
               <div class="panel-body">
                 <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
@@ -29,7 +29,11 @@
                           <td>1</td>
                         </tr>
                         <tr>
-                          <th scope="row">Category :</th>
+                          <th scope="row">Subcategory :</th>
+                          <td>Bra</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Categories :</th>
                           <td>Bra</td>
                         </tr>
                         <tr>
@@ -39,8 +43,8 @@
                         <tr>
                           <th scope="row">Action </th>
                           <td class=" last">
-                            <a href="category-view.php" class="btn btn-success btn-xs"><i class="fa fa-eye"></i> View </a>
-                            <a href="category-edit.php" class="btn btn-warning btn-xs"> <i class="fa fa-pencil"></i> Edit </a>
+                            <a href="subcategory-view.php" class="btn btn-success btn-xs"><i class="fa fa-eye"></i> View </a>
+                            <a href="subcategory-edit.php" class="btn btn-warning btn-xs"> <i class="fa fa-pencil"></i> Edit </a>
                             <a href="#" class="btn btn-danger btn-xs"> <i class="fa fa-eraser"></i> Delete </a>
                           </td>
                         </tr>
