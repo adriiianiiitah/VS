@@ -5,19 +5,19 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        <link rel="icon" href="../favicon.ico"  type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 			<!--[if lt IE 9]>
             <script src="../js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
         
-        <link rel="stylesheet" href="../css/owl.theme.css">
-        <link rel="stylesheet" href="../css/owl.transitions.css">
-
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/styles.css">
+        
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/formulario.js"></script>
 
 	</head>
 	<body>
@@ -64,7 +64,7 @@
 	         <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="Phone Number" />
 			</div>
 			<div class="form-group">
-				 <button class="btn btn-lg" type="submit">Create Account</button>
+				 <button class="btn btn-lg" type="submit" id="btnSubmit" onclick="checkForm(this)">Create Account</button>
 			</div>
 		</fieldset>
 	</form>
