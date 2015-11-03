@@ -14,9 +14,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+        <li><a class="active" href="index.php">Home <span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="clothing.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos <span class="caret"></span></a>
+          <a href="clothing.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothing <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="clothing.php">Bras</a></li>
             <li><a href="clothing.php">Panties</a></li>
@@ -28,8 +28,8 @@
         <li><a href="contact.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
-        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+        <li><a href="#" title="My Account" class="icons" data-toggle="modal" data-target="#modalLogin"><span class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="#" class="dropdown-toggle icons" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">$ 0.00 </a></li>
         </ul>
@@ -38,3 +38,49 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button 
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Log in</h4>
+        </div>
+        <div class="modal-body">
+          <div class="login"> 
+            <form class="form" method="post" role="form">
+              <fieldset>
+              
+                <div class="form-group">                        
+                    <label for="email" class="sr-only"> Email Address</label>
+                    <input class="form-control input-lg" type="email" name="email" id="email" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="sr-only"> Password </label>
+                  <input class="form-control input-lg" type="password" name="password" id="password" placeholder="Password"/>
+                </div>
+                <a href="newpassword.php">Forgot Password</a>
+                <a href="newpassword.php" class="pull-right">New Account</a>
+                
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-lg" type="submit">Login</button>
+          <button class="btn btn-lg" type="submit">Facebook</button>
+          <button class="btn btn-lg" type="submit">Twitter</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
