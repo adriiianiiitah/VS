@@ -20,6 +20,11 @@ img {
     max-width: 100% !important;
 }
 
+.checkbox, .radio {
+    float: left;
+    margin-right: 20px;
+}
+
 .wrapper:before, .wrapper:after {
     display: table;
     content: " ";
@@ -120,7 +125,6 @@ img {
 .content {
     padding: 20px 15px;
     background: #f0f3f4;
-    overflow: auto;
 }
 
 .row {
@@ -148,6 +152,79 @@ img {
 ul li button {
     margin: 4px;
 }
+
+.error-message {
+    position: relative;
+    background-color: #FA5858;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+        clear: both;
+
+    transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -webkit-transition: all 3s ease-in;
+}
+
+.error-message:before {
+    position: absolute;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 2;
+    width: .6em;
+    height: .6em;
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+    background-color: #FA5858;
+    background-image: none;
+    top: -4px;
+}
+
+.succes-message {
+    position: relative;
+    background-color: #31B404;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    clear: both;
+
+    transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -webkit-transition: all 3s ease-in;
+}
+
+.succes-message:before {
+    position: absolute;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 2;
+    width: .6em;
+    height: .6em;
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+    background-color: #31B404;;
+    background-image: none;
+    top: -4px;
+}
+
+
+
 
 
 
@@ -186,11 +263,14 @@ ul li button {
 }
 
 .right-side .panel .panel-heading .files {
+    padding: 0;
+    margin-top: 20px;
     list-style-type: none;
+    float: left;
 }
 
 .right-side .panel .panel-heading .files li{
-    float: left;
+    display: inline;
 }
 
 .right-side .panel .panel-heading .files > li > button {
@@ -198,6 +278,7 @@ ul li button {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .skin-orange .sidebar > .sidebar-menu > li > a .fa {
@@ -255,6 +336,28 @@ ul li button {
 #page-index {
 
 }
+
+.panel-heading {
+    border-bottom: 1px solid #ddd;
+}
+
+#menu_show {
+    background: red;
+    z-index: 50;
+    color: #000;
+    text-decoration: none;
+}
+
+#menu_show i {
+    background: #FFBE64;
+    z-index: 50;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/**_____________________________________________________/
+
 
 
     /*==========  Mobile First Method  ==========*/

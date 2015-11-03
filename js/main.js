@@ -1,6 +1,6 @@
 
 $(function () {
-	
+
   function abso() {
 
     $('#owl-item img').css({

@@ -56,9 +56,9 @@
                       <td></td>
                       <td></td>
                       <td>
-                        <a href="#"><i class="fa fa-eye"></i></a>
-                        <a href="#"><i class="fa fa-pencil"></i></a>
-                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                        <a href="user-view.php"><i class="fa fa-eye"></i></a>
+                        <a href="user-edit.php"><i class="fa fa-pencil"></i></a>
+                        <a href="·"><i class="fa fa-trash-o"></i></a>
                       </td>
                     </tr>
                   </tbody>

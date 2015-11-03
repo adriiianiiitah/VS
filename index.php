@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/owl.carousel.css">
@@ -25,59 +26,132 @@
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="body-home">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <?php 
       require_once('views/menu.html');
     ?>
-
-    <div id="owl-demo" class="owl-carousel">
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-      <div><img src="admin/images/slider/slider01.jpg"></div>
-    </div>
+    <section id="slider">
+      <div id="owl-demo" class="owl-carousel">
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+        <div><img src="admin/images/slider/slider01.jpg"></div>
+      </div>
+    </section>
 
     <div class="container-fluid">
-      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-3">
-          <img src="admin/images/events/ofert01.jpg" class="offert"/>
-        </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event01.jpg" class="event"/>
-       </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event02.jpg" class="event"/>
-        </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event03.jpg" class="event"/>
-        </div>
+        <aside id="events" class="col-md-3 col-xs-12 col-sm-12" >
+          <a class="event" href="#">
+            <figure>
+              <img src="admin/images/events/ofert01.jpg" alt="Offert 1"/>
+              <figcaption>
+                <h2>Title 1</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                  accusantium doloremque laudantium.
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="event" href="#">
+            <figure>
+              <img src="admin/images/events/ofert01.jpg" alt="Offert 1"/>
+              <figcaption>
+                <h2>Title 2</h2>
+                <p>
+                  Veritatis et quasi architecto beatae vitae 
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                  aspernatur aut odit aut fugit, sed quia consequuntur.
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </aside>
+
+        <section id="promos" class="col-md-9 col-xs-12 col-sm-12">
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event01.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Ipsam voluptatem quia voluptas sit 
+                      aspernatur aut odit aut fugit, sed quia consequuntur.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event02.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                      aspernatur aut odit aut fugit.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event03.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Quasi architecto beatae vitae ipsam voluptatem quia voluptas sit 
+                      aspernatur aut odit aut fugit, sed quia consequuntur.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event04.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Veritatis et quasi architecto beatae vitae 
+                      dicta consequuntur.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event05.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Nemo enim ipsam voluptatem quia voluptas sit 
+                      aspernatur aut odit aut fugit, sed quia consequuntur.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="promo" href="#">
+                <figure class="col-sm-4">
+                  <img src="admin/images/events/event06.jpg" alt="Offert 1"/>
+                  <figcaption>
+                    <h2>Title 2</h2>
+                    <p>
+                      Eoluptatem quia voluptas sit 
+                      aspernatur aut odit aut fugit, sed quia consequuntur.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+        </section>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-3">
-          <img src="admin/images/events/ofert01.jpg" class="offert"/>
-        </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event01.jpg" class="event"/>
-       </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event02.jpg" class="event"/>
-        </div>
-        <div class="col-md-3">
-          <img src="admin/images/events/event03.jpg" class="event"/>
-        </div>
-      </div>
-
     </div> <!-- /container --> 
     <footer>
         <nav class="col-md-3 pull-right" id="social-icons">
