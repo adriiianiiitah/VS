@@ -22,14 +22,13 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <th>Name</th>
+                      <th>Last name</th>
+                      <th>Email</th>
+                      <th>Gender</th>
+                      <th>Birthday</th>
+                      <th>Phone Numbre</th>
+                      <thclass=" no-link last"><span class="nobr">Action</span></th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -42,13 +41,11 @@
                       <th></th>
                       <th></th>
                       <th></th>
-                      <th></th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
