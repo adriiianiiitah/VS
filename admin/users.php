@@ -28,7 +28,11 @@
                       <th>Gender</th>
                       <th>Birthday</th>
                       <th>Phone Numbre</th>
+<<<<<<< HEAD
                       <th class=" no-link last"><span class="nobr">Action</span></th>
+=======
+                      <thclass=" no-link last"><span class="nobr">Action</span></th>
+>>>>>>> origin/master
                     </tr>
                   </thead>
                   <tfoot>
