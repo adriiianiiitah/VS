@@ -145,7 +145,7 @@ body {
 input, textarea,
 
 button[type=submit] {
-	padding: 20px 50px;
+	padding: 10px;
 	background-color: #ff9300;
 	color: #fff;
 }
@@ -243,10 +243,6 @@ button[type=submit]:hover {
 
 .body-orange {
 	background: url(../admin/images/backgrounds/intro.png);
-}
-
-.login{
-	margin: 5% 25%;	
 }
 
 .body-home {
@@ -394,11 +390,18 @@ button[type=submit]:hover {
 
 
 
+.padding {
+	padding: 50px;
+}
+
+.modal-body form span {
+    background: #fff;
+	color: #00bfff;
+}
 
 
-
-
-
-
-
+.modal-header {
+	background: #00bfff;
+	color: #fff;
+}
 

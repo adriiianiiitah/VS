@@ -44,50 +44,37 @@
 	}
 
 
-	function isColor(color) {
-		var expreg = /^([A-Za-z0-9\-]{2,})+$/;
-  
-		if(expreg.test(color)) {
-			return true;
-		} else {
-			return false;
+
+
+	function showErrorInputsPassword(inputs_password) {
+		for(var i = 0; i < inputs_password.length; i++) {
+			if(!isPassword(inputs_password[i].value.trim())) {
+				showError(inputs_password[i],"This value should be an password");
+			}
 		}
 	}
 
 
-	function isDateTime(datetime) {
-		var expreg = /^(0?[1-9]|1[012])[\/](0?[1-9]|[12][0-9]|3[01])[\/](19|20)\d{2} (0?[1-9]|1[012]):([0-5][0-9]) (am|pm|AM||PM)+$/;
-  
-		if(expreg.test(datetime)) {
-			return true;
-		} else {
-			return false;
+	function showErrorInputsEmail(inputs_email) {
+		for(var i = 0; i < inputs_email.length; i++) {
+			if(!isEmail(inputs_email[i].value.trim())) {
+				showError(inputs_email[i],"This value should be an email");
+			}
 		}
 	}
 
-	function isInteger(number) {
-		var expreg = /^([0-9]{1,})+$/;
-  
-		if(expreg.test(number)) {
-			return true;
-		} else {
-			return false;
+	function showErrorInputsSame(inputs_same_pass) {
+
+		//for(var i = 0; i < inputs_same_pass.length; i++) {
+		if (inputs_same_pass[0] != inputs_same_pass[1]) {
+			showError(inputs_same_pass[1],"This value should be the same");
 		}
+		//}
 	}
-
-
 
 
 
 /*
-
-	function showErrorInputsRequired(inputs_required) {
-		for(var i = 0; i < inputs_required.length; i++) {
-			if(inputs_required[i].value.trim() == "") {
-				showError(inputs_required[i],"This value is required");
-			}
-		}
-	}
 
 	function showErrorInputsColor(inputs_color) {
 		for(var i = 0; i < inputs_color.length; i++) {
@@ -99,6 +86,10 @@
 	*/
 
 	function isFormValid() {
+		var inputs_phone = $('form[data-validate]').find('input[type=tel]');
+		var inputs_date = $('form[data-validate]').find('input[type=date]');
+		var inputs_email = $('form[data-validate]').find('input[type=email]');
+		var inputs_password = $('form[data-validate]').find('input[type=password]');
 
 		var inputs_text = $('form[data-validate]').find('input[type=text]');
 		var inputs_number = $('form[data-validate]').find('input[type=number]');
@@ -109,9 +100,13 @@
 		var inputs_datetime = $('form[data-validate]').find('input[data-datetime]');
 		var inputs_checkbox = $('form[data-validate]').find('input[data-checked]');
 
+		showOkInputs(inputs_email);
+		showOkInputs(inputs_password);
+		showOkInputs(inputs_phone);
 		showOkInputs(inputs_text);
 		showOkInputs(inputs_number);
 		showOkInputs(inputs_file);
+		showOkInputs(inputs_date);
 		showOkTextareas(textareas);
 
 		showOkInputs(selects);
@@ -126,30 +121,36 @@
 
 	function validate(e) {
 		cleanAll();
+		var inputs_password = $('form[data-validate]').find('input[data-password]');
+
 		var inputs_code = $('form[data-validate]').find('input[data-code]');
 		var inputs_name = $('form[data-validate]').find('input[data-name]');
+		var inputs_lastname = $('form[data-validate]').find('input[data-lastname]');
 		var inputs_description = $('form[data-validate]').find('input[data-description]');
 		var inputs_required = $('form[data-validate]').find('input[data-required]');
 		var inputs_color = $('form[data-validate]').find('input[data-color]');
-
+		var inputs_email = $('form[data-validate]').find('input[data-email]');
 		var inputs_checkbox = $('form[data-validate]').find('input[data-checked]');
+
+		var inputs_same_pass = $('form[data-validate]').find('input[data-samepassword]');
 
 
 
 		var inputs_file_image = $('form[data-validate]').find('input[data-image]');
 		var inputs_file_thumbnail = $('form[data-validate]').find('input[data-thumbnail]');
-
 		var inputs_datetime = $('form[data-validate]').find('input[data-datetime]');
-		
-
+		var inputs_date = $('form[data-validate]').find('input[data-date]');
 
 		var textareas_required = $('form[data-validate]').find('textarea[data-required]');
 
 		var selects_required = $('form[data-validate]').find('select[data-required]');
 
+		showErrorInputsPassword(inputs_password);
 
+		showErrorInputsEmail(inputs_email);
 		showErrorInputsCode(inputs_code);
 		showErrorInputsName(inputs_name);
+		showErrorInputsLastName(inputs_lastname);
 		showErrorInputsRequired(inputs_required);
 		showErrorInputsColor(inputs_color);
 		showErrorInputsFileImage(inputs_file_image);
@@ -157,14 +158,11 @@
 
 
 		showErrorInputsDateTime(inputs_datetime);
-
-
 		showErrorTextareasRequired(textareas_required);
-		
-
 		showErrorSelects(selects_required);
-
 		showErrorInputsCheckbox(inputs_checkbox);
+
+		showErrorInputsSame(inputs_same_pass);
 
 	
 		if(isFormValid()) {
@@ -231,6 +229,16 @@
 			} 
 		}
 	}
+
+	function showErrorInputsLastName(inputs_lastname) {
+		for(var i = 0; i < inputs_lastname.length; i++) {
+			if(!isLastName(inputs_lastname[i].value.trim())) {
+				showError(inputs_lastname[i], "This value should be a last name");
+			} 
+		}
+	}
+
+
 
 	function showErrorInputsFileImage(inputs_file_image) {
 		for(var i = 0; i < inputs_file_image.length; i++) {
@@ -313,6 +321,25 @@
 
 
 	/* V A L I D A T I O N S */
+	function isPassword(password) {
+		var expreg = /^(?=^.{4,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+  
+		if(expreg.test(password)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function isEmail(email) {
+		var expreg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  
+		if(expreg.test(email)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	function isCode(code) {
 		var expreg = /^([A-Za-z0-9\-]{10,})+$/;
@@ -333,6 +360,48 @@
 			return false;
 		}
 	}
+
+	function isLastName(lastname) {
+		var expreg = /^(([A-Za-záéíóúñ]{2,})|([A-Za-záéíóúñ]{2,}[\s][A-Za-záéíóúñ]{2,}))+$/;
+  
+		if(expreg.test(lastname)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function isColor(color) {
+		var expreg = /^([A-Za-z0-9\-]{2,})+$/;
+  
+		if(expreg.test(color)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+
+	function isDateTime(datetime) {
+		var expreg = /^(0?[1-9]|1[012])[\/](0?[1-9]|[12][0-9]|3[01])[\/](19|20)\d{2} (0?[1-9]|1[012]):([0-5][0-9]) (am|pm|AM||PM)+$/;
+  
+		if(expreg.test(datetime)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function isInteger(number) {
+		var expreg = /^([0-9]{1,})+$/;
+  
+		if(expreg.test(number)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 
 	function isFileAllowed(input_file, type) {
 		var file = input_file.value;
@@ -372,6 +441,7 @@
 		$('form[data-validate]').find('div.form-group.has-error').removeClass('has-error');
 
 		$('form[data-validate]').find('div.has-error').removeClass('has-error');
+
 
 		$('form[data-validate]').find('div.succes-message').remove();
 		$('form[data-validate]').find('div.form-group.has-success').removeClass('has-success');

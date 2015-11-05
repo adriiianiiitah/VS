@@ -40,30 +40,38 @@
           <div class="col-md-12">
             <h2>Contact us</h2>
 
-            <form class="form" role="form">
+            <form class="form" role="form" onsubmit="return validate()" data-validate>
               <div class="row">
                 <div class="col-md-6">
+                  <div>
                   <div class="form-group">
-                    <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+                    <input type="text" class="form-control input-lg" id="name" placeholder="Name" data-name>
                   </div>
+                  </div>
+                  <div>
                   <div class="form-group">
-                    <input type="text" class="form-control input-lg" id="lastname" placeholder="Last Name">
+                    <input type="text" class="form-control input-lg" id="lastname" placeholder="Last Name" data-lastname>
+                  </div>
                   </div>
                 </div>
 
                 <div class="col-md-6">
+                  <div>
                   <div class="form-group">
-                    <input type="email" class="form-control input-lg" id="email" placeholder="Introduce tu email">
+                    <input type="email" class="form-control input-lg" id="email" placeholder="Introduce tu email" data-email>
                   </div>
+                  </div>
+                  <div>
                   <div class="form-group">
-                    <input type="tel" class="form-control input-lg" id="phone" placeholder="Phone Number">
+                    <input type="tel" class="form-control input-lg" id="phone" placeholder="Phone Number" data-phone>
+                  </div>
                   </div>
                 </div>
 
                 <div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" rows="3" placeholder="Comments"></textarea>
+                      <textarea class="form-control" rows="3" data-required></textarea>
                     </div>
                   </div>
                 </div>
@@ -84,6 +92,7 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/validator.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
         <script type="text/javascript">
           function initialize() {

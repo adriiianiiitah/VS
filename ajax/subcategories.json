@@ -1,0 +1,44 @@
+[
+	{ 
+		"id": 1, 
+		"no": 'SUB-CAT-111', 
+		"category": "Bras",
+		"description": 'All Bras.'
+	}, 
+	{ 
+		"id": 2, 
+		"no": 'CAT-222', 
+		"category": "Full",
+		"description": 'All Panties.'
+	},
+	{ 
+		"id": 3, 
+		"no": 'CAT-333', 
+		"category": "Demi",
+		"description": 'Lingerie.'
+	},
+	{ 
+		"id": 4, 
+		"no": 'CAT-444', 
+		"category": "Unlined",
+		"description": 'All about Sleep.'
+	},
+	{ 
+		"id": 5, 
+		"no": 'CAT-555', 
+		"category": "Strapless",
+		"description": 'All about Beauty.'
+	},
+	{ 
+		"id": 6, 
+		"no": 'CAT-666', 
+		"category": "Swim",
+		"description": 'All about Swim.'
+	},
+	{ 
+		"id": 7, 
+		"no": 'CAT-777', 
+		"category": "Sport",
+		"description": 'All about Sport.'
+	}
+]
