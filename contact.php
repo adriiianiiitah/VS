@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>
+        <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>-->
 
 
         <!--[if lt IE 9]>
@@ -45,12 +45,12 @@
                 <div class="col-md-6">
                   <div>
                   <div class="form-group">
-                    <input type="text" class="form-control input-lg" id="name" placeholder="Name" data-name>
+                    <input type="text" class="form-control input-lg" placeholder="Name" data-required data-name>
                   </div>
                   </div>
                   <div>
                   <div class="form-group">
-                    <input type="text" class="form-control input-lg" id="lastname" placeholder="Last Name" data-lastname>
+                    <input type="text" class="form-control input-lg" placeholder="Last Name" data-required data-lastname>
                   </div>
                   </div>
                 </div>
@@ -58,12 +58,12 @@
                 <div class="col-md-6">
                   <div>
                   <div class="form-group">
-                    <input type="email" class="form-control input-lg" id="email" placeholder="Introduce tu email" data-email>
+                    <input type="text" class="form-control input-lg" placeholder="Email" data-required data-email>
                   </div>
                   </div>
                   <div>
                   <div class="form-group">
-                    <input type="tel" class="form-control input-lg" id="phone" placeholder="Phone Number" data-phone>
+                    <input type="tel" class="form-control input-lg" placeholder="Phone Number" data-required>
                   </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                 </div>
               </div>
               <div class="row">
-                <button type="submit" id="btn-send" class="btn btn-lg">Send</button>
+                <button class="btn btn-lg" type="submit">Send</button>
               </div>
             </form>
           </div>
@@ -93,7 +93,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/validator.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+         <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
         <script type="text/javascript">
           function initialize() {
             var latlng = new google.maps.LatLng(57.0442, 9.9116);
@@ -106,10 +106,7 @@
                 navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-
             var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-
-
         };
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
