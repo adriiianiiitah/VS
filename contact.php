@@ -76,7 +76,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-group">
                 <button class="btn btn-lg" type="submit">Send</button>
               </div>
             </form>

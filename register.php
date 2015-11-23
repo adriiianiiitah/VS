@@ -30,53 +30,53 @@
 			<div>
 				<div class="form-group">								
 					<label for="name" class="sr-only">Name</label>
-					<input class="form-control " id="name" name="name" type="text" placeholder="Name" data-required data-name/>
+					<input class="form-control input-lg" id="name" name="name" type="text" placeholder="Name" data-required data-name/>
 				</div>
 			</div>
 			<div>
 				<div class="form-group">				
 					<label for="lastname" class="sr-only">Last name</label>
-					<input class="form-control" id="lastname" name="lastname" type="text" placeholder="Last Name" data-required data-lastname/>
+					<input class="form-control input-lg" id="lastname" name="lastname" type="text" placeholder="Last Name" data-required data-lastname/>
 				</div>
 			</div>
 			<div>
 				<div class="form-group">												
 					<label for="email" class="sr-only"> Email Address</label>
-					<input class="form-control" type="text" name="email" id="email" placeholder="Email" data-required data-email/>
+					<input class="form-control input-lg" type="text" name="email" id="email" placeholder="Email" data-required data-email/>
 				</div>
 			</div>
 			<div>
 				<div class="form-group">
-				<label for="password" class="sr-only"> Password </label>
-				<input class="form-control" type="password" name="password" placeholder="Password" data-required data-password data-samepassword/>
+					<label for="password" class="sr-only"> Password </label>
+					<input class="form-control input-lg" type="password" name="password" placeholder="Password" data-required data-password data-samepassword/>
 				</div>
 			</div>
 			<div>
 				<div class="form-group">
-				<label type="Confirmpass" class="sr-only">Confirm password</label>
-				<input class="form-control" type="password" name="Confirmpass" placeholder="Confirm Passsword" data-required data-password data-samepassword/>
+					<label type="Confirmpass" class="sr-only">Confirm password</label>
+					<input class="form-control input-lg" type="password" name="Confirmpass" placeholder="Confirm Passsword" data-required data-password data-samepassword/>
 				</div>
 			</div>
 			<label for="gender">Gender</label>
-			<div class="form-group">
-				<input type="radio" name="gender" id="fem" value="Female" checked="checked"/>							
-			<div>
-					<label for="fem">Female</label>
-				<input type="radio" name="gender" id="male" value="Male"/>				
-				<label for="male">Male</label>				
+			<div class="form-group">						
+				<div class="radio">
+					<label for="fem"><input type="radio" name="gender" id="fem" value="Female" checked="checked"/>
+					Female</label>
+					<label for="male"><input type="radio" name="gender" id="male" value="Male"/>				
+					Male</label>				
 				</div>
 			</div>
 			<div>
 				<div class="form-group">
-				<label for="bday" class="sr-only">Birthday</label>
-				<input class="form-control" type="date" id="bday" name="bday" placeholder="Birthday DD/MM/YY" data-required/>
+					<label for="bday" class="sr-only">Birthday</label>
+					<input class="form-control input-lg" type="date" id="bday" name="bday" placeholder="Birthday DD/MM/YY" data-required/>
 				</div>
 			</div>
 			<div>
 				<div class="form-group">
 				<label for="phone" class="sr-only">Phone Number</label>
-	         <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone Number" data-required/>
-			</d	iv>
+	         <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="Phone Number" data-required/>
+			</div>
 			</div>
 			<div class="form-group">
 				 <button class="btn btn-lg" type="submit">Create Account</button>

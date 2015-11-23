@@ -16,14 +16,13 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/main.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
    </head>
 	<body>
 		<?php 
       require_once('views/menu.html');
     ?>
     <div class="main">
-      <div class="row">
+      <div class="row padding">
 			<form class="form" method="post" >
 				<fieldset> 
 					<legend>Shopping cart</legend>
@@ -50,19 +49,20 @@
 							<tfoot>
 								<tr>
 										<td colspan="3"><a href="clothing.php">Continuar comprando</a>	</td>
-										<td><button type="button">Quitar productos del carrito</button></td>
-										<td><button type="button">Comprar</button></td>
 								</tr>
 							</tfoot>
-							
 						</table>
+					</div>
+					<div class="form-group pull-right">
+						<button class="btn btn-lg" type="button">Quitar productos del carrito</button>
+						<button class="btn btn-lg" type="button">Comprar</button>					
 					</div>
 				</fieldset>
 			</form>
 		</div>    
     </div>
     <footer>
-        <nav class="col-md-3" id="social-icons">
+        <nav class="col-md-3 pull-right" id="social-icons">
           <ul>
             <li><a href="https://www.facebook.com/"><img class="social-icon" src="img/fb.png"></a></li>
             <li><a href="https://twitter.com/"><img class="social-icon" src="img/tw.png"></a></a></li>
@@ -74,9 +74,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/owl.carousel.js"></script>
         <script src="js/validator.js"></script>
+        
     </body>
 </html>

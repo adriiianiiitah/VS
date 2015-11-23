@@ -27,7 +27,9 @@ table{
 	empty-cells: 	show;
 }
 
-
+.padding{
+	min-height: 40em;
+}
 
 .error-message {
     position: relative;

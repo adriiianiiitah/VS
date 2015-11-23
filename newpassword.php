@@ -34,16 +34,16 @@
         		<input class="form-control input-lg" type="password" name="newpassword" placeholder="New Password" data-password data-samepassword/>
         	</div>
         	<div class="form-group">
-        		<label type="Confirmpass" class="sr-only">Confirm password</label>
+        		<label for="Confirmpass" class="sr-only">Confirm password</label>
         		<input class="form-control input-lg" type="password" name="Confirmpass" placeholder="Confirm Passsword" data-password data-samepassword/>
         	</div>
-        	<div class="row">
+        	<div class="form-group">
         		 <button class="btn btn-lg" type="submit">Update Password</button>
         	</div>
     	</form>
 	</div>
 	<footer>
-        <nav class="col-md-3" id="social-icons">
+        <nav class="col-md-3 pull-right" id="social-icons">
           <ul>
             <li><a href="https://www.facebook.com/"><img class="social-icon" src="img/fb.png"></a></li>
             <li><a href="https://twitter.com/"><img class="social-icon" src="img/tw.png"></a></a></li>
