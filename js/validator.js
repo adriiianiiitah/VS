@@ -13,13 +13,14 @@
 			//$('#menu_show').show();
 		});
 	});
-	const IMAGE 		= 1; 
-	const SWF 			= 2; 
-	const FILE 			= 3; 
-	const VIDEO 		= 4; 
-	const HTML 			= 5; 
-	const OFICCE_FILE 	= 5; 
-	const IMAGE_EMPTY 	= "../img/categories/category.png";
+
+	 IMAGE 		= 1; 
+	 SWF 		= 2; 
+	 FILE 		= 3; 
+	 VIDEO 		= 4; 
+	 HTML 			= 5; 
+	 OFICCE_FILE 	= 5; 
+	 IMAGE_EMPTY 	= "../img/categories/category.png";
 
 
 
@@ -85,6 +86,40 @@
 	}
 	*/
 
+	function isFormLoginValid() {
+		var inputs_phone = $('form[data-validate-login]').find('input[type=tel]');
+		var inputs_date = $('form[data-validate-login]').find('input[type=date]');
+		var inputs_email = $('form[data-validate-login]').find('input[type=email]');
+		var inputs_password = $('form[data-validate-login]').find('input[type=password]');
+
+		var inputs_text = $('form[data-validate-login]').find('input[type=text]');
+		var inputs_number = $('form[data-validate-login]').find('input[type=number]');
+		var inputs_file = $('form[data-validate-login]').find('input[type=file]');
+		var textareas = $('form[data-validate-login]').find('textarea');
+		var selects = $('form[data-validate-login]').find('select');
+
+		var inputs_datetime = $('form[data-validate-login]').find('input[data-datetime]');
+		var inputs_checkbox = $('form[data-validate-login]').find('input[data-checked]');
+
+		showOkInputs(inputs_email);
+		showOkInputs(inputs_password);
+		showOkInputs(inputs_phone);
+		showOkInputs(inputs_text);
+		showOkInputs(inputs_number);
+		showOkInputs(inputs_file);
+		showOkInputs(inputs_date);
+		showOkTextareas(textareas);
+
+		showOkInputs(selects);
+
+		showOkInputsDateTime(inputs_datetime);
+
+		showOkInputsCheckbox(inputs_checkbox);
+		//var inputs_file_image = $('form[data-validate]').find('input[data-image]');
+
+		return $('form[data-validate-login]').find('div.error-message').length == 0;
+	}
+
 	function isFormValid() {
 		var inputs_phone = $('form[data-validate]').find('input[type=tel]');
 		var inputs_date = $('form[data-validate]').find('input[type=date]');
@@ -119,8 +154,62 @@
 		return $('form[data-validate]').find('div.error-message').length == 0;
 	}
 
+	function validateLogin(e) {
+		cleanAll();
+		var inputs_password = $('form[data-validate-login]').find('input[data-password]');
+
+		var inputs_code = $('form[data-validate-login]').find('input[data-code]');
+		var inputs_name = $('form[data-validate-login]').find('input[data-name]');
+		var inputs_lastname = $('form[data-validate-login]').find('input[data-lastname]');
+		var inputs_description = $('form[data-validate-login]').find('input[data-description]');
+		var inputs_required = $('form[data-validate-login]').find('input[data-required]');
+		var inputs_color = $('form[data-validate-login]').find('input[data-color]');
+		var inputs_email = $('form[data-validate-login]').find('input[data-email]');
+		var inputs_checkbox = $('form[data-validate-login]').find('input[data-checked]');
+
+		var inputs_same_pass = $('form[data-validate-login]').find('input[data-samepassword]');
+
+
+
+		var inputs_file_image = $('form[data-validate-login]').find('input[data-image]');
+		var inputs_file_thumbnail = $('form[data-validate-login]').find('input[data-thumbnail]');
+		var inputs_datetime = $('form[data-validate-login]').find('input[data-datetime]');
+		var inputs_date = $('form[data-validate-login]').find('input[data-date]');
+
+		var textareas_required = $('form[data-validate-login]').find('textarea[data-required]');
+
+		var selects_required = $('form[data-validate-login]').find('select[data-required]');
+
+		showErrorInputsPassword(inputs_password);
+
+		showErrorInputsEmail(inputs_email);
+		showErrorInputsCode(inputs_code);
+		showErrorInputsName(inputs_name);
+		showErrorInputsLastName(inputs_lastname);
+		showErrorInputsRequired(inputs_required);
+		showErrorInputsColor(inputs_color);
+		showErrorInputsFileImage(inputs_file_image);
+		showErrorInputsFileThumbnail(inputs_file_thumbnail);
+
+
+		showErrorInputsDateTime(inputs_datetime);
+		showErrorTextareasRequired(textareas_required);
+		showErrorSelects(selects_required);
+		showErrorInputsCheckbox(inputs_checkbox);
+
+		showErrorInputsSame(inputs_same_pass);
+
+	
+		if(isFormLoginValid()) {
+			return true;
+		}
+
+		return false;
+	}
+
 	function validate(e) {
 		cleanAll();
+		var inputs_integer = $('form[data-validate]').find('input[data-integer]');
 		var inputs_password = $('form[data-validate]').find('input[data-password]');
 
 		var inputs_code = $('form[data-validate]').find('input[data-code]');
@@ -447,6 +536,17 @@
 		$('form[data-validate]').find('div.form-group.has-success').removeClass('has-success');
 
 		$('form[data-validate]').find('div.has-success').removeClass('has-success');
+
+		$('form[data-validate-login]').find('div.error-message').remove();
+		$('form[data-validate-login]').find('div.form-group.has-error').removeClass('has-error');
+
+		$('form[data-validate-login]').find('div.has-error').removeClass('has-error');
+
+
+		$('form[data-validate-login]').find('div.succes-message').remove();
+		$('form[data-validate-login]').find('div.form-group.has-success').removeClass('has-success');
+
+		$('form[data-validate-login]').find('div.has-success').removeClass('has-success');
 	}
 
 	function showImage(input_file_image) {

@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/validator.js"></script>
         <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>-->
 
 
@@ -76,8 +80,8 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <button class="btn btn-lg" type="submit">Send</button>
+              <div class="row">
+                <button class="btn btn-orange btn-lg margin-left-15" type="submit">Send</button>
               </div>
             </form>
           </div>
@@ -87,12 +91,10 @@
       <div id="map_canvas" style="width:100%; height:900px"></div>
     </div>   
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/validator.js"></script>
+        
          <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
         <script type="text/javascript">
           function initialize() {

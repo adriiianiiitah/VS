@@ -30,6 +30,100 @@
     <?php 
       require_once('views/menu.html');
     ?>
+    <div class="modal fade" id="modalItem" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="login">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">View</h4>
+            </div>
+            <div class="modal-body">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div class="profile_img">
+                  <div id="crop-avatar">
+                    <!-- Current avatar -->
+                    <div>
+                      <img src="admin/images/Panties/PAN456-C.jpg" alt="Avatar" class="img-thumbnail">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12"> 
+                <table class="table table-condensed">
+                  <tbody>
+                    <tr>
+                      <th class="col-xs-5 col-sm-3 col-md-3 col-lg-2" scope="row">No.</th>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Code :</th>
+                      <td>PAN456-C</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Name :</th>
+                      <td>Shortie Panty</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Category :</th>
+                      <td>Panties</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Color :</th>
+                      <td>Pink-White</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Multicolor :</th>
+                      <td><i class="fa fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Texture :</th>
+                      <td><a href="#"><img class="texture" src="admin/images/textures/PAN456-C.jpg" /></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Size :</th>
+                      <td><select id="subcategory" name="subcategory" class="form-control col-md-7 col-xs-12" data-required>
+                          <option value="xs">XS</option>
+                          <option value="s">S</option>
+                          <option value="m">M</option>
+                          <option value="l">L</option>
+                          <option value="xl">XL</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Description :</th>
+                      <td>
+                        Seriously smooth under everything, this bikini gives you the coverage you want, with a supersoft waistband and a body-loving mid rise. Panties perfect for every day, with a comfy fit and sleek feel.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Price :</th>
+                      <td>$ 14.50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Quantity :</th>
+                      <td><input type="number" min="1" step="1" value="1"/></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Popularity :</th>
+                      <td><i class="fa fa-star"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" href="shoppingcart.php" class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="container">
       <section id="filter">
         <form role="form" class="form-horizontal">
@@ -104,113 +198,75 @@
       </section>
 
       <section id="catalog" class="row">
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
+        <article class="item col-sm-3">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="img/car.png"/></a></li>
+              <li><a href="#"><img src="img/desires.png"/></a></li>
+            </ul>
+          </nav>
+          <a href="#" data-toggle="modal" data-target="#modalItem">
+            <figure>
+              <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
+              <figcaption>
+                <p>Price: $49.50</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
 
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
+        <article class="item col-sm-3">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="img/car.png"/></a></li>
+              <li><a href="#"><img src="img/desires.png"/></a></li>
+            </ul>
+          </nav>
+          <a href="#" data-toggle="modal" data-target="#modalItem">
+            <figure>
+              <img src="admin/images/lingerie/V561115.jpg" alt="article 1"/>
+              <figcaption>
+                <p>Price: $49.50</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
 
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
+        <article class="item col-sm-3">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="img/car.png"/></a></li>
+              <li><a href="#"><img src="img/desires.png"/></a></li>
+            </ul>
+          </nav>
+          <a href="#" data-toggle="modal" data-target="#modalItem">
+            <figure>
+              <img src="admin/images/lingerie/V561207.jpg" alt="article 1"/>
+              <figcaption>
+                <p>Price: $49.50</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
 
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
+        <article class="item col-sm-3">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="img/car.png"/></a></li>
+              <li><a href="#"><img src="img/desires.png"/></a></li>
+            </ul>
+          </nav>
+          <a href="#" data-toggle="modal" data-target="#modalItem">
+            <figure>
+              <img src="admin/images/lingerie/V564844.jpg" alt="article 1"/>
+              <figcaption>
+                <p>Price: $49.50</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
 
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-         
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
-
-        <a href="#">
-          <figure class="col-sm-4">
-            <img src="admin/images/Pajamas/pajama1.jpg" alt="article 1"/>
-            <figcaption>
-              <p>Price: $49.50</p>
-            </figcaption>
-          </figure>
-        </a>
+      
       </section>
     </div>   
     
