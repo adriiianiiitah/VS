@@ -36,87 +36,94 @@
       
           <!-- Modal content-->
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header modal-header-skyblue">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">View</h4>
             </div>
             <div class="modal-body">
               <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
-                <div class="profile_img">
-                  <div id="crop-avatar">
-                    <!-- Current avatar -->
-                    <div>
-                      <img src="admin/images/Panties/PAN456-C.jpg" alt="Avatar" class="img-thumbnail">
-                    </div>
-                  </div>
-                </div>
+                <figure>
+                  <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
+                  <figcaption>
+                    <p class="btn btn-orange btn-block">Price: $49.50</p>
+                  </figcaption>
+                </figure>
               </div>
 
               <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12"> 
-                <table class="table table-condensed">
-                  <tbody>
-                    <tr>
-                      <th class="col-xs-5 col-sm-3 col-md-3 col-lg-2" scope="row">No.</th>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Code :</th>
-                      <td>PAN456-C</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Name :</th>
-                      <td>Shortie Panty</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Category :</th>
-                      <td>Panties</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Color :</th>
-                      <td>Pink-White</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Multicolor :</th>
-                      <td><i class="fa fa-check"></i></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Texture :</th>
-                      <td><a href="#"><img class="texture" src="admin/images/textures/PAN456-C.jpg" /></a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size :</th>
-                      <td><select id="subcategory" name="subcategory" class="form-control col-md-7 col-xs-12" data-required>
-                          <option value="xs">XS</option>
-                          <option value="s">S</option>
-                          <option value="m">M</option>
-                          <option value="l">L</option>
-                          <option value="xl">XL</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description :</th>
-                      <td>
-                        Seriously smooth under everything, this bikini gives you the coverage you want, with a supersoft waistband and a body-loving mid rise. Panties perfect for every day, with a comfy fit and sleek feel.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Price :</th>
-                      <td>$ 14.50</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Quantity :</th>
-                      <td><input type="number" min="1" step="1" value="1"/></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Popularity :</th>
-                      <td><i class="fa fa-star"></i></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h3>Shortie Panty</h3>
+                <nav class="filters">
+                  <ul>
+                    <li><span>Sizes</span></li>
+                    <li>
+                      <ul>
+                        <li><a href="#">XS</a></li>
+                        <li><a href="#">S</a></li>
+                        <li><a href="#">XS</a></li>
+                        <li><a href="#">M</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">XL</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="#">30A</a></li>
+                        <li><a href="#">30B</a></li>
+                        <li><a href="#">32A</a></li>
+                        <li><a href="#">32B</a></li>
+                        <li><a href="#">32C</a></li>
+                        <li><a href="#">34A</a></li>
+                        <li><a href="#">34B</a></li>
+                        <li><a href="#">34C</a></li>
+                        <li><a href="#">36B</a></li>
+                        <li><a href="#">36C</a></li>
+                        <li><a href="#">38A</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                 <nav class="filters">
+                  <ul>
+                    <li><span>Textures</span></li>
+                    <li>
+                      <ul class="textures">
+                        <li><a href="#"><img src="admin/images/colors/yellow.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/red.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/green.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/sky-blue.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/black.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/white.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/pink.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/purple.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/cyan.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/orange.png"/></a></li>
+                        <li><a href="#"><img src="admin/images/colors/fucsia.png"/></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div>
+                  <h3>Description</h3>
+                  <p>Seriously smooth under everything, this bikini gives you the coverage you want, with a supersoft waistband and a body-loving mid rise. Panties perfect for every day, with a comfy fit and sleek feel.</p>
+                </div>
+                <div>
+                  <h3>Popularity</h3>
+                  <p class="popularity"><i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i></p>
+                </div>
+                <form class="form-inline" role="form">
+                  <h3>Quantity</h3>
+                  <div class="form-group">
+                    <label class="sr-only" for="id">Contraseña</label>
+                    <input type="hidden" id="id" name="id" value="1" />
+                    <label class="sr-only" for="quantity">Contraseña</label>
+                    <input type="number" step="1" min="1" name="quantity" id="quantity"  class="form-control"  value="1" />
+                  </div>
+                  <button type="submit" href="#" class="btn btn-skyblue"><i class="fa fa-shopping-cart"></i> Add to cart</span></button>
+                </form>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" href="shoppingcart.php" class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+              
             </div>
           </div>
         </div>
@@ -124,149 +131,180 @@
     </div>
 
 
-    <div class="container">
-      <section id="filter">
-        <form role="form" class="form-horizontal">
-          <div class="form-select">
-            <label class="sr-only" for="category">Category</label>
-            <div class="col-md-offset-1 col-md-2 col-xs-12">
-              <select id="category" name="category" class="form-control">
-                <option value="">Category</option>
-                <option value="bras">Bras</option>
-                <option value="panties">Panties</option>
-                <option value="sleep">Sleep</option>
-                <option value="lingerie">Lingerie</option>
-                <option value="swim">Swim</option>
-                <option value="sport">Sport</option>
-                <option value="clothing">Clothing</option>
-              </select> 
-            </div>
-          </div>
-
-          <div class="form-select">
-            <label class="sr-only" for="color">Color</label>
-            <div class="col-md-2 col-xs-12">
-              <select id="color" name="color" class="form-control">
-                <option value="">Color</option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="red">Red</option>
-                <option value="sky-blue">Sky-blue</option>
-                <option value="purple">Purple</option>
-              </select>  
-            </div>
-          </div>
-
-          <div class="form-select">
-            <label class="sr-only" for="size">Size</label>
-            <div class="col-md-2 col-xs-12">
-              <select id="size" name="size" class="form-control">
-                <option value="">Size</option>
-                <option value="xs">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-              </select>  
-            </div>
-          </div>
-
-          <div class="form-select">
-            <label class="sr-only" for="range">Range</label>
-            <div class="col-md-2 col-xs-12">
-              <select id="range" name="range" class="form-control">
-                <option value="">Price min</option>
-                <option value="0">0</option>
-                <option value="100">100</option>
-                <option value="1000">1000</option>
-              </select>  
-            </div>
-          </div>
-
-          <div class="form-select">
-            <label class="sr-only" for="to">To</label>
-            <div class="col-md-2 col-xs-12">
-              <select id="to" name="to" class="form-control">
-                <option value="">Price max</option>
-                <option value="0">0</option>
-                <option value="100">100</option>
-                <option value="1000">1000</option>
-              </select>  
-            </div>
-          </div>
-        </form>
-      </section>
-
-      <section id="catalog" class="row">
-        <article class="item col-sm-3">
-          <nav>
-            <ul>
-              <li><a href="#"><img src="img/car.png"/></a></li>
-              <li><a href="#"><img src="img/desires.png"/></a></li>
+    <div class="container-fluid margin-top-50">
+      
+      <aside id="filter-bar" class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <h3>Categories</h3>
+        <nav class="categories">
+          <ul>
+            <li><span>Categories</span></li>
+            <li>
+              <ul class="categories">
+                <li><a href="#">Subcategories</a></li>
+                <li><a href="#">Bras</a></li>
+                <li><a href="#">Panties</a></li>
+                <li><a href="#">Sleep</a></li>
+                <li><a href="#">Lingerie</a></li>
+                <li><a href="#">Swim</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <h3>Filters</h3>
+        <nav class="remove-filters">
+          <ul>
+            <li><a href="#"><span class="btn btn-red"><i class="fa fa-trash"></i></span> Color: ficsia</a></li>
+            <li><a href="#"><span class="btn btn-red"><i class="fa fa-trash"></i></span> Size: 32B</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-red btn-lg btn-block">Remove filters</button>
+        <nav class="filters">
+          <ul>
+            <li><span>Sizes</span></li>
+            <li>
+              <ul>
+                <li><a href="#">XS</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">XS</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">XL</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">30A</a></li>
+                <li><a href="#">30B</a></li>
+                <li><a href="#">32A</a></li>
+                <li><a href="#">32B</a></li>
+                <li><a href="#">32C</a></li>
+                <li><a href="#">34A</a></li>
+                <li><a href="#">34B</a></li>
+                <li><a href="#">34C</a></li>
+                <li><a href="#">36B</a></li>
+                <li><a href="#">36C</a></li>
+                <li><a href="#">38A</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <h3>Colors</h3>
+        <nav class="filters">
+          <ul>
+            <li><span>Colors</span></li>
+            <li>
+              <ul class="colors">
+                <li><a href="#"><img src="admin/images/colors/yellow.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/red.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/green.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/sky-blue.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/black.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/white.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/pink.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/purple.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/cyan.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/orange.png"/></a></li>
+                <li><a href="#"><img src="admin/images/colors/fucsia.png"/></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="filters">
+          <ul>
+            <li><span>Prices</span></li>
+            <li><a href="#">$0 - $100</a></li>
+            <li><a href="#">$100 - $200</a></li>
+            <li><a href="#">$200 - $300</a></li>
+            <li><a href="#">$300 - $400</a></li>
+            <li><a href="#">$400 - $500</a></li>
+            <li><a href="#">$500 - $1000</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section id="catalog" class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+        <section id="filter" class="row">
+          <div class="pull-rigth">
+            <ul class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">></a></li>
             </ul>
-          </nav>
+          </div>
+        </section>
+        <article class="item col-sm-3">
           <a href="#" data-toggle="modal" data-target="#modalItem">
             <figure>
+              <figcaption>
+                <h4 class="name">Shortie Panty</h4>
+              </figcaption>
               <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
               <figcaption>
-                <p>Price: $49.50</p>
+                <p class="btn btn-orange">Price: $49.50</p>
               </figcaption>
             </figure>
           </a>
+          <ul>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-heart"></i> I wish</a></li>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-shopping-cart"></i> Buy</a></li>
+          </ul>
         </article>
 
         <article class="item col-sm-3">
-          <nav>
-            <ul>
-              <li><a href="#"><img src="img/car.png"/></a></li>
-              <li><a href="#"><img src="img/desires.png"/></a></li>
-            </ul>
-          </nav>
           <a href="#" data-toggle="modal" data-target="#modalItem">
             <figure>
-              <img src="admin/images/lingerie/V561115.jpg" alt="article 1"/>
               <figcaption>
-                <p>Price: $49.50</p>
+                <h4 class="name">Shortie Panty</h4>
+              </figcaption>
+              <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
+              <figcaption>
+                <p class="btn btn-orange">Price: $49.50</p>
               </figcaption>
             </figure>
           </a>
+          <ul>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-heart"></i> I wish</a></li>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-shopping-cart"></i> Buy</a></li>
+          </ul>
         </article>
 
         <article class="item col-sm-3">
-          <nav>
-            <ul>
-              <li><a href="#"><img src="img/car.png"/></a></li>
-              <li><a href="#"><img src="img/desires.png"/></a></li>
-            </ul>
-          </nav>
           <a href="#" data-toggle="modal" data-target="#modalItem">
             <figure>
-              <img src="admin/images/lingerie/V561207.jpg" alt="article 1"/>
               <figcaption>
-                <p>Price: $49.50</p>
+                <h4 class="name">Shortie Panty</h4>
+              </figcaption>
+              <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
+              <figcaption>
+                <p class="btn btn-orange">Price: $49.50</p>
               </figcaption>
             </figure>
           </a>
+          <ul>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-heart"></i> I wish</a></li>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-shopping-cart"></i> Buy</a></li>
+          </ul>
         </article>
 
         <article class="item col-sm-3">
-          <nav>
-            <ul>
-              <li><a href="#"><img src="img/car.png"/></a></li>
-              <li><a href="#"><img src="img/desires.png"/></a></li>
-            </ul>
-          </nav>
           <a href="#" data-toggle="modal" data-target="#modalItem">
             <figure>
-              <img src="admin/images/lingerie/V564844.jpg" alt="article 1"/>
               <figcaption>
-                <p>Price: $49.50</p>
+                <h4 class="name">Shortie Panty</h4>
+              </figcaption>
+              <img src="admin/images/lingerie/V449712.jpg" alt="article 1"/>
+              <figcaption>
+                <p class="btn btn-orange">Price: $49.50</p>
               </figcaption>
             </figure>
           </a>
+          <ul>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-heart"></i> I wish</a></li>
+            <li><a href="#" class="btn btn-skyblue"><i class="fa fa-shopping-cart"></i> Buy</a></li>
+          </ul>
         </article>
-
-      
       </section>
     </div>   
     

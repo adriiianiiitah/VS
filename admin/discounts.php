@@ -1,7 +1,7 @@
       <?php 
         require_once('views/navigation.html');
       ?>
-      <div id="page-users" class="right-side">
+      <div id="page-discounts" class="right-side">
       <div class="content">
         <div class="row">
           <div class="col-xs-12">

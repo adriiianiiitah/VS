@@ -96,7 +96,11 @@
                       <label class="control-label col-md-3 col-sm-12 col-xs-12" for="name">Color <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" id="color" name="color" class="form-control col-md-7 col-xs-12" data-required data-color/>
+                        <select id="color" name="color" class="form-control col-md-7 col-xs-12" data-required>
+                          <option value="">Select an option</option>
+                          <option value="yellow">Yellow</option>
+                          <option value="white">White</option>
+                        </select>
                       </div>
                     </div>
                     <div class="form-group">
