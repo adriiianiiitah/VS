@@ -1,0 +1,56 @@
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+<div class="container-contact">
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Contact us</h2>
+
+        <form class="form" role="form" onsubmit="return validate()" data-validate>
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Name" data-required data-name>
+              </div>
+              </div>
+              <div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Last Name" data-required data-lastname>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Email" data-required data-email>
+              </div>
+              </div>
+              <div>
+              <div class="form-group">
+                <input type="tel" class="form-control input-lg" placeholder="Phone Number" data-required>
+              </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" data-required></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn btn-orange btn-lg margin-left-15" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+  </div> <!-- /container -->  
+  <div id="map_canvas" style="width:100%; height:900px"></div>
+</div> 

@@ -1,0 +1,75 @@
+
+<div class="container padding">	
+	<form class="form-horizontal col-lg-7" method="post" role="form" onsubmit="return validate()" data-validate>
+		<fieldset>
+			<legend><span class="btn-info">New Account</span></legend>
+			<div  class="form-group">
+				<label for="name" class="col-lg-2 control-label text-left">Name</label>
+				<div class="col-lg-10">
+					<input class="form-control " id="name" name="name" type="text" placeholder="Name" data-required data-name/>
+				</div>
+			</div>
+
+			<div  class="form-group">			
+				<label for="lastname" class="col-lg-2 control-label text-left">Last name</label>
+				<div class="col-lg-10">
+					<input class="form-control" id="lastname" name="lastname" type="text" placeholder="Last Name" data-required data-lastname/>
+				</div>
+			</div>
+
+			<div class="form-group">											
+				<label for="email" class="col-lg-2 control-label text-left"> Email Address</label>
+				<div class="col-lg-10">
+					<input class="form-control" type="text" name="email" id="email" placeholder="Email" data-required data-email/>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="password" class="col-lg-2 control-label text-left"> Password </label>
+				<div class="col-lg-10">
+					<input class="form-control" type="password" name="password" placeholder="Password" data-required data-password data-samepassword/>
+				</div>
+			</div>
+
+			<div  class="form-group">
+				<label type="Confirmpass" class="col-lg-2 control-label text-left">Confirm password</label>
+				<div class="col-lg-10">
+					<input class="form-control" type="password" name="Confirmpass" placeholder="Confirm Passsword" data-required data-password data-samepassword/>
+				</div>
+			</div>
+
+			<div  class="form-group">
+				<label class="col-lg-2 control-label text-left" for="gender">Gender</label>
+				<div class="col-lg-10">
+					<label class="radio-inline"  for="fem">Female</label>
+					<input type="radio" name="gender" id="fem" value="Female" checked="checked"/>							
+					<label class="radio-inline"  for="male">Male</label>	
+					<input type="radio" name="gender" id="male" value="Male"/>		
+				</div>			
+			</div>
+		
+			<div  class="form-group">
+				<label for="bday" class="col-lg-2 control-label text-left">Birthday</label>
+				<div class="col-lg-10">
+					<input class="form-control" type="date" id="bday" name="bday" placeholder="Birthday DD/MM/YY" data-required/>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="phone" class="col-lg-2 control-label text-left">Phone Number</label>
+	      <div class="col-lg-10">
+	        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone Number" data-required/>
+				</div>
+			</div>
+
+			<div class="form-group padding-left-15">
+				<button class="btn btn-orange" type="submit"><i class="fa fa-paper-plane"></i> Create Account </button>
+			</div>
+		</fieldset>
+	</form>
+	<div class="col-lg-5">
+		<figure class="padding-top-50">
+			<img id="img-buy-online" class="" src="img/buy.jpg"/>
+		</figure>
+	</div>
+</div>
