@@ -273,13 +273,54 @@ ul li button {
     display: inline;
 }
 
-.right-side .panel .panel-heading .files > li > button {
-    background: #00bfff;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+
+
+.btn-skyblue { 
+  color: #FFFFFF; 
+  background-color: #11C1F3; 
+  border-color: #11C1F3; 
+} 
+ 
+.btn-skyblue:hover, 
+.btn-skyblue:focus, 
+.btn-skyblue:active, 
+.btn-skyblue.active, 
+.open .dropdown-toggle.btn-skyblue { 
+  color: #11C1F3; 
+  background-color: #FFFFFF; 
+  border-color: #11C1F3; 
+} 
+ 
+.btn-skyblue:active, 
+.btn-skyblue.active, 
+.open .dropdown-toggle.btn-skyblue { 
+  background-image: none; 
+} 
+ 
+.btn-skyblue.disabled, 
+.btn-skyblue[disabled], 
+fieldset[disabled] .btn-skyblue, 
+.btn-skyblue.disabled:hover, 
+.btn-skyblue[disabled]:hover, 
+fieldset[disabled] .btn-skyblue:hover, 
+.btn-skyblue.disabled:focus, 
+.btn-skyblue[disabled]:focus, 
+fieldset[disabled] .btn-skyblue:focus, 
+.btn-skyblue.disabled:active, 
+.btn-skyblue[disabled]:active, 
+fieldset[disabled] .btn-skyblue:active, 
+.btn-skyblue.disabled.active, 
+.btn-skyblue[disabled].active, 
+fieldset[disabled] .btn-skyblue.active { 
+  background-color: #11C1F3; 
+  border-color: #11C1F3; 
+} 
+ 
+.btn-skyblue .badge { 
+  color: #11C1F3; 
+  background-color: #FFFFFF; 
 }
+
 
 .skin-orange .sidebar > .sidebar-menu > li > a .fa {
     margin-right: 20px;

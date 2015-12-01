@@ -1,25 +1,29 @@
-      <?php 
-        require_once('views/navigation.html');
-      ?>
-      <div id="page-index" class="right-side">
-      <div class="content">
-        <div class="row">
-          <div class="col-xs-12">
-            <section class="panel">
-              <div class="jumbotron">
-                <div class="container">
-                  <h1>Welcome!</h1>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-            <!--<div class="container-fluid" ></div>-->
-      </div>
+<?php 
+  session_start();
+  if(isset($_GET) && !empty($_GET['ctrl'])) {
+    $controller = $_GET['ctrl'];
 
-        <?php 
-          require_once('views/footer.html');
-        ?>
-</body>
-</html>
+    switch ($controller) {
+      case '':
+      case 'index':
+        require_once('controllers/IndexCtrl.php');
+        $controller = new IndexCtrl();
+      break;
+      case 'categories':
+        require_once('controllers/CategoriesCtrl.php');
+        $controller = new CategoriesCtrl();
+      break;
+      case 'clothes':
+        require_once('controllers/ClothesCtrl.php');
+        $controller = new ClothesCtrl();
+      break;
+      
+      default:
+        $this->showErrorPage();
+    }
+  } else {
+    require_once('controllers/IndexCtrl.php');
+    $controller = new IndexCtrl();
+  }
+  $controller->execute();
+?>

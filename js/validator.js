@@ -494,30 +494,33 @@
 
 	function isFileAllowed(input_file, type) {
 		var file = input_file.value;
-		var allowed = false;
+		var allowed = true;
 
-		switch(type) {
-			case IMAGE: extensions = new Array(".gif",".jpg",".png"); break;
-			case SWF: extensions = new Array(".swf"); break;
-			case FILE: extensions = new Array(".exe",".sit",".zip",".tar",".swf",".mov",".hqx",".ra",".wmf",".mp3",".qt",".med",".et"); break;
-			case VIDEO: extensions = new Array(".mov",".ra",".wmf",".mp3",".qt",".med",".et",".wav"); break;
-			case HTML: extensions = new Array(".html",".htm",".shtml"); break;
-			case OFICCE_FILE: extensions = new Array(".doc",".xls",".ppt");  break;
-		}
+		if(file !="") {
+			allowed = false;
+			switch(type) {
+				case IMAGE: extensions = new Array(".gif",".jpg",".png"); break;
+				case SWF: extensions = new Array(".swf"); break;
+				case FILE: extensions = new Array(".exe",".sit",".zip",".tar",".swf",".mov",".hqx",".ra",".wmf",".mp3",".qt",".med",".et"); break;
+				case VIDEO: extensions = new Array(".mov",".ra",".wmf",".mp3",".qt",".med",".et",".wav"); break;
+				case HTML: extensions = new Array(".html",".htm",".shtml"); break;
+				case OFICCE_FILE: extensions = new Array(".doc",".xls",".ppt");  break;
+			}
 
-		if(!file) {return;}
-		while (file.indexOf("\\") != -1) {
-			file = file.slice(file.indexOf("\\") + 1); 
-		}
-		
-		extension = file.slice(file.indexOf(".")).toLowerCase(); 
+			if(!file) {return;}
+			while (file.indexOf("\\") != -1) {
+				file = file.slice(file.indexOf("\\") + 1); 
+			}
+			
+			extension = file.slice(file.indexOf(".")).toLowerCase(); 
 
-		for (var i = 0; i < extensions.length; i++) { 
-			if (extensions[i] == extension) { 
-				allowed = true; 
-				break; 
+			for (var i = 0; i < extensions.length; i++) { 
+				if (extensions[i] == extension) { 
+					allowed = true; 
+					break; 
+				} 
 			} 
-		} 
+		}
 
 		return allowed;
 	}
@@ -584,5 +587,32 @@
 	$("input[data-thumbnail]").change(function (){
 		showThumbnail(this);
      });
+
+	$('.btn-delete-category').click(function(){
+    var id =  $(this).attr("id");
+    
+    var input_hidden = $('.input-delete-category').val(id);
+  });
+
+  $('.button-delete-category').click(function() {
+  	var id = $('.input-delete-category').val();
+  	$.ajax({
+            type: "POST",
+            url: "ajax/delete-category.php",
+            data: "id="+id,
+            error: function(){
+                //alert("error petici�n ajax");
+            },
+            success: function(data){
+                if(data) {
+                	//alert(data);
+                  $(location).attr('href','index.php?ctrl=categories');
+                } else {
+                	//alert(data);
+                  $(location).attr('href','index.php?ctrl=categories');
+                }
+            }
+        });
+  })
 
 //});
