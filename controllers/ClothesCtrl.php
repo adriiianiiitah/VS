@@ -21,7 +21,7 @@
 						break;
 					
 					default:
-						http_response_code(404);
+						$this->showError();
 						break;
 				} 
 			}

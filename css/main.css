@@ -99,8 +99,13 @@ table{
     top: -4px;
 }
 
-
-
+.footer-menu{
+	margin-left: 2%;
+	margin-top: 1em;
+}
+.footer-menu ul{
+	list-style-type: none;
+}
 
 
 

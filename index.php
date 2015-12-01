@@ -21,9 +21,14 @@
         require_once('controllers/ShoppingCartCtrl.php');
         $controller = new ShoppingCartCtrl();
       break;
+      case 'UserCtrl':
+      	require_once('controllers/UserCtrl.php');
+      	$controller = new UserCtrl();
+      break;
       
-        default:
-        http_response_code(404);
+      default:
+        $this->showError();
+        break;
     }
   } else {
     require_once('controllers/HomeCtrl.php');

@@ -64,6 +64,14 @@
 			$footer = file_get_contents("views/footer.html");
 			return $footer;
 		}
+		
+		public function showError() {
+      	$header = file_get_contents("views/header.html");
+      	$menu =  file_get_contents("views/menu.html");
+      	$view =  file_get_contents("views/404.html");
+      	$footer = file_get_contents("views/footer.html");
+      	echo $header.$menu.$view.$footer;
+    }
 
 	}
 
